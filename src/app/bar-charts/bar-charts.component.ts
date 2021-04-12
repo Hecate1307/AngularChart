@@ -12,14 +12,14 @@ export class BarChartsComponent implements OnInit {
   constructor() {
     Object.assign(this, { Animals, Multi });
   }
-  view: any[] = [400, 200];
+  view: any[] = [460, 300];
 
   // options
   legendTitle: string = 'Animals';
   legendPosition: string = 'right'; // ['right', 'below']
   legend: boolean = false;
 
-  xAxis: boolean = false;
+  xAxis: boolean = true;
   yAxis: boolean = true;
 
   yAxisLabel: string = 'Population';
@@ -27,7 +27,7 @@ export class BarChartsComponent implements OnInit {
   showXAxisLabel: boolean = true;
   showYAxisLabel: boolean = true;
 
-  maxXAxisTickLength: number = 10;
+  maxXAxisTickLength: number = 2;
   maxYAxisTickLength: number = 10;
   trimXAxisTicks: boolean = true;
   trimYAxisTicks: boolean = false;

@@ -1,27 +1,30 @@
 <div class="row">
-    <ngx-charts-line-chart [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
-        [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
-        [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline">
-    </ngx-charts-line-chart>
+    <div class="col line-chart">
+        <ngx-charts-line-chart [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [legendPosition]="legendPosition">
+        </ngx-charts-line-chart>
+    </div>
+    <div class="col line-chart">
+        <ngx-charts-area-chart [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [legendPosition]="legendPosition">
+        </ngx-charts-area-chart>
+    </div>
 </div>
 
 <div class="row">
-    <ngx-charts-area-chart [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
-        [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
-        [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline">
-    </ngx-charts-area-chart>
-</div>
+    <div class="col line-chart">
+        <ngx-charts-area-chart-stacked [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [legendPosition]="legendPosition">
+        </ngx-charts-area-chart-stacked>
+    </div>
+    <div class="col line-chart">
+        <ngx-charts-area-chart-normalized [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [legendPosition]="legendPosition">
+        </ngx-charts-area-chart-normalized>
+    </div>
 
-<div class="row">
-    <ngx-charts-area-chart-stacked [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
-        [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
-        [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline">
-    </ngx-charts-area-chart-stacked>
-</div>
-
-<div class="row">
-    <ngx-charts-area-chart-normalized [results]="Multi" [view]="view" [scheme]="colorScheme" [legend]="legend"
-        [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
-        [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline">
-    </ngx-charts-area-chart-normalized>
 </div>

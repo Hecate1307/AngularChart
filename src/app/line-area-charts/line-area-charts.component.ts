@@ -13,7 +13,7 @@ export class LineAreaChartsComponent implements OnInit {
     Object.assign(this, { Animals, Multi });
   }
 
-  view: any[] = [700, 400];
+  view: any[] = [460, 300];
 
   colorScheme = {
     domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347']
@@ -21,6 +21,9 @@ export class LineAreaChartsComponent implements OnInit {
 
   legend: boolean = true;
   legendTitle: string = 'Animals';
+  legendPosition: string = "below";
+
+  showLabels: boolean = true;
 
   xAxis: boolean = true;
   yAxis: boolean = true;

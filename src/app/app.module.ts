@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BarChartsComponent } from './bar-charts/bar-charts.component';
 import { LineAreaChartsComponent } from './line-area-charts/line-area-charts.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LineAreaChartsComponent } from './line-area-charts/line-area-charts.com
     HeaderComponent,
     NumberCardChartComponent,
     BarChartsComponent,
-    LineAreaChartsComponent
+    LineAreaChartsComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
