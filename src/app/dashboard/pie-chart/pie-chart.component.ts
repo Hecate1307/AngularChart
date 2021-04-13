@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Animals, Multi } from '../data/animal';
+import { Animals, Multi } from '../../data/animal';
 
 @Component({
   selector: 'app-pie-chart',
@@ -10,8 +10,8 @@ export class PieChartComponent implements OnInit {
   Animals: any[];
   Multi: any[];
 
-  view: any[] = [520, 200];
-  view2: any[] = [550, 400];
+  view: any[] = [500, 350];
+  view2: any[] = [900, 250];
 
   gradient: boolean = false;
   isDoughnut: boolean = true;
@@ -19,6 +19,7 @@ export class PieChartComponent implements OnInit {
   showLegend: boolean = true;
   showLabels: boolean = true;
 
+  animations: boolean = true;
   legendPosition: string = 'below';
 
 
@@ -27,7 +28,8 @@ export class PieChartComponent implements OnInit {
   }
 
   colorScheme = {
-    domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347']
+    domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347',
+      '#FFA07A', '#FA8072', '#F08080', '#CD5C5C', '#B22222']
   };
 
   onSelect(data): void {

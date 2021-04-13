@@ -13,13 +13,18 @@
 }
 
 .pie-chart-sub{
+    background-color: white;
     border: 1px lightgray solid;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: white;
     padding: 1rem;
 }
 
 .pie-chart-advanced{
-    margin-bottom: 4%;
+    margin-bottom: 2%;
+}
+
+.pie-chart-title{
+    width: 100%;
+    border-bottom: 1px lightgray solid;
 }

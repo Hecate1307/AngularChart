@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Animals, Multi } from '../data/animal';
+import { Animals, Multi } from '../../data/animal';
 
 @Component({
   selector: 'app-bar-charts',
@@ -45,8 +45,10 @@ export class BarChartsComponent implements OnInit {
   gradient: boolean = false;
 
   colorScheme = {
-    domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347']
+    domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347',
+      '#FFA07A', '#FA8072', '#F08080', '#CD5C5C', '#B22222']
   };
+
   schemeType: string = 'ordinal'; // 'ordinal' or 'linear'
 
   activeEntries: any[] = []
@@ -79,7 +81,7 @@ export class BarChartsComponent implements OnInit {
 
   formatNumber(input: number): string {
     let res = input / 10000;
-    return res === 0 ? input.toString() : res.toString() + "w";
+    return res < 1 ? input.toString() : res.toString() + "w";
   }
 
 }

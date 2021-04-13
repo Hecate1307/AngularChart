@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Animals, Multi } from '../data/animal';
+import { Animals, Multi } from '../../data/animal';
 
 @Component({
   selector: 'app-line-area-charts',
@@ -13,15 +13,18 @@ export class LineAreaChartsComponent implements OnInit {
     Object.assign(this, { Animals, Multi });
   }
 
-  view: any[] = [460, 300];
+  view: any[] = [500, 300];
 
   colorScheme = {
-    domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347']
+    domain: ['#FF8C00', '#FFA500', '#FFA07A', '#FF7F50', '#FF6347',
+      '#FFA07A', '#FA8072', '#F08080', '#CD5C5C', '#B22222']
   };
+
 
   legend: boolean = true;
   legendTitle: string = 'Animals';
   legendPosition: string = "below";
+  legendData: any[];
 
   showLabels: boolean = true;
 
@@ -38,6 +41,12 @@ export class LineAreaChartsComponent implements OnInit {
   animations: boolean = true;
 
   ngOnInit(): void {
+  }
+
+  onActivate(data): void {
+    for (let d in data) {
+      console.log(d);
+    }
   }
 
 }

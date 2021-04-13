@@ -1,13 +1,21 @@
-.bar-chart{
+.container{
+    background-color: rgb(243, 243, 243);
+}
+
+.number-card{
     background-color: white;
-    width: 48%;
     border: 1px lightgray solid;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 1%;
+    margin-top: 2%;
     padding: 1rem;
 }
 
-.block{
+.pie{
     margin-top: 2%;
+}
+
+h1{
+    color: DARKORANGE;
+    font-family: 'Caveat', cursive;
 }
